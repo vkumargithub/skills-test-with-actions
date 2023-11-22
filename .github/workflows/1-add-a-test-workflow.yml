@@ -56,12 +56,12 @@ jobs:
         with:
           fetch-depth: 0 # Let's get all the branches.
 
-      # Verify the learner added remark-lint.
+      # Verify the learner added remark_lint.
       - name: Verify workflow
         uses: skills/action-check-file@v1
         with:
           file: .github/workflows/ci.yml
-          search: remark-preset-lint-consistent
+          search: remark_preset_lint_consistent
 
       # In README.md, switch step 1 for step 2.
       - name: Update to step 2
